@@ -27,7 +27,7 @@ db_mysql_client_os_family: "
   -%}
     {{ 'Debian' }}
   {%- else -%}
-    {{ 'Linux' }}
+    {{ 'NotSupported' }}
   {%- endif -%}
   "
 
