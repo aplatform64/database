@@ -24,7 +24,7 @@ db_postgresql_server_os_family: "
   -%}
     {{ 'Ubuntu' }}
   {%- else -%}
-    {{ 'Linux' }}
+    {{ 'NotSupported' }}
   {%- endif -%}
   "
 

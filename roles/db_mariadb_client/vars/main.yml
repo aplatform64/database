@@ -24,7 +24,7 @@ db_mariadb_client_os_family: "
   -%}
     {{ 'Ubuntu' }}
   {%- else -%}
-    {{ 'Linux' }}
+    {{ 'NotSupported' }}
   {%- endif -%}
   "
 
