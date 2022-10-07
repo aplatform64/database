@@ -16,7 +16,7 @@ db_postgresql_server_platforms:
   - "Debian11"
 
 # Group Linux Distributions by family
-db_postgresql_server_os_family: "
+db_postgresql_server_os_family: |
   {%- if
       ( ansible_distribution == 'CentOS' ) or
       ( ansible_distribution == 'RedHat' ) or
@@ -34,7 +34,6 @@ db_postgresql_server_os_family: "
   {%- else -%}
     {{ 'NotSupported' }}
   {%- endif -%}
-  "
 
 # Multiplatform packages
 db_postgresql_server_profiles_common:
