@@ -17,7 +17,7 @@ db_mysql_server_platforms:
   - "Debian11"
 
 # Group Linux Distributions by family
-db_mysql_server_os_family: |
+db_mysql_server_os_family: >-
   {%- if
       ( ansible_distribution == 'CentOS' ) or
       ( ansible_distribution == 'RedHat' ) or
